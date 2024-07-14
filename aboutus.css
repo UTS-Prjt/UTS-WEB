@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #151515;
+    color: #ffffff; /* Changed text color to white */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffffff; /* Heading text color */
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ffffff; /* Heading text color */
+}
+
+.team-member {
+    margin-bottom: 40px;
+}
+
+.member-info {
+    background-color: #151515;
+    padding: 20px;
+}
+
+.member-info img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.member-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.member-info p {
+    font-size: 1rem;
+    color: #ffffff; /* Paragraph text color */
+}
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.back-button:hover {
+    background-color: #000000;
+    color: #ffffff; /* Hover color for text */
+}
