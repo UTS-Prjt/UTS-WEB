@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #151515; /* Setting a background color for the body */
+    color: #ffffff; /* Default text color */
+}
+
+.container {
+    max-width: 70rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+header:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    z-index: 25;
+}
+
+.mountain1 {
+    position: absolute;
+    bottom: -120px;
+    width: 1300px;
+    right: 1;
+    z-index: 19;
+}
+
+.person {
+    position: absolute;
+    width: 1350px;
+    bottom: -110px;
+    left: -5px;
+    z-index: 20;
+}
+
+.mountain2 {
+    position: absolute;
+    width: 1200px;
+    bottom: -100px;
+    left: 1;
+    z-index: 18;
+}
+
+.mountain3 {
+    position: absolute;
+    width: 930px;
+    bottom: -10px;
+    right: 0;
+    z-index: 17;
+}
+
+.sky {
+    position: absolute;
+    width: 1400px;
+    bottom: -150px;
+    right: 6;
+}
+
+/*hh*/
+
+.img2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.hover-section {
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Adjust height of the section as needed */
+}
+
+.hover-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-img {
+    position: absolute;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity change */
+}
+
+.overlay1 {
+    top: 10%;
+    left: 5%;
+}
+
+.overlay2 {
+    top: 16%;
+    left: 4%;
+}
+
+.overlay3 {
+    top: 12%;
+    left: 2%;
+}
+
+.overlay4 {
+    top: 10%;
+    left: 25%;
+}
+
+.overlay5 {
+    top: 15%;
+    left: 9%;
+}
+
+.overlay6 {
+    top: 11%;
+    left: 9%;
+}
+
+.overlay7 {
+    top: 4%;
+    left: 9%;
+}
+
+.hover-images:hover .overlay-img {
+    opacity: 12; /* Show overlay images on hover */
+}
+
+/*kk*/
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 30;
+    background: linear-gradient(to bottom, rgba( 0, 0, 0, 0.05), transparent);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff; /* Adjusting logo color to match the design */
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    font-weight: 300;
+}
+
+.hamburger-menu {
+    width: 1.55rem;
+    height: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.bar ul li {
+    position: relative;
+    margin: 10px;
+}
+
+.bar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 0.5em;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.bar ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Existing styles */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 200px; /* Set a maximum height for the dropdown */
+    top: 40px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.aboutus{
+    white-space: nowrap;
+}
+
+.big-title {
+    position: absolute;
+    z-index: 30;
+    line-height: 4rem;
+    top: calc(50% - 2rem);
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #ffffff; /* Adjusting big title color to match the design */
+}
+
+section {
+    width: 100%;
+    position: relative;
+}
+
+section .container {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+section img {
+    width: 80%;
+    height: auto; /* Ensuring images maintain aspect ratio */
+    border-radius: 10px;
+}
+
+section .container > * {
+    margin: 2rem;
+}
+
+.content {
+    color: #ffffff;
+    transform: translateY(-50px);
+}
+
+.imgContainer {
+    transform: translateY(50px);
+}
+
+.title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    position: relative;
+}
+
+.title .border {
+    position: absolute;
+    width: calc(55% - 2rem); /* Adjusting border width */
+    height: 3px;
+    background-color: #ffffff; /* Adjusting border color */
+    bottom: 0;
+    left: 0rem; /* Adjusting left position for border */
+}
+
+.shadow {
+    position: absolute;
+    bottom: 100%;
+    height: 300px;
+    width: 100%;
+    left: 0;
+    z-index: 20;
+    background: linear-gradient(to top, #151515, transparent);
+}
+
+.opacity {
+    opacity: 0;
+}
+
+@media (max-width: 850px) {
+    section .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .big-title {
+        font-size: 3rem;
+    }
+
+    .text {
+        font-size: .8rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Add these CSS rules to your existing stylesheet */
+
+.image-text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically center */
+    margin-top: 3rem; /* Increase top margin */
+}
+
+.image {
+    flex: 1;
+    max-width: 45%;
+}
+
+.image img {
+    width: 100%; /* Ensure images take full width of their containers */
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Shadow effect for images */
+}
+
+.text {
+    flex: 1;
+    max-width: 95%;
+    padding: 0 1rem; /* Padding around text content */
+}
+
+.text h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.text p.text {
+    font-size: 0.9rem;
+}
+
+.centered-section {
+    text-align: center; /* Center aligns all text within the section */
+}
+
+.centered-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensures container takes full height */
+}
+
+.centered-section .text {
+    max-width: 600px; /* Example maximum width for the text */
+    margin: 0 auto; /* Centers the text horizontally */
+}
